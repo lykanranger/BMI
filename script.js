@@ -8,7 +8,7 @@ function calculateBMI() {
 
   const bmiValue = weightValue / (heightValue * heightValue);
 
-  bmiInputEl.value = bmiValue;
+  bmiInputEl.value = bmiValue.toFixed(2);
 
   if (bmiValue < 18.5) {
     weightConditionEl.innerText = "Under weight";
